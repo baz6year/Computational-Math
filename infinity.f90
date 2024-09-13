@@ -1,7 +1,7 @@
 program infinity
     implicit none
     integer:: n
-    real:: I 
+    real(8):: I 
     n = 0
     I = 1
     do while(2 * I > I)
