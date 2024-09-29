@@ -1,18 +1,19 @@
 program UpperSum
-integer:: n, a, b, height
-real:: width, sum, area, x
-n = 0
+integer:: n, z
+real:: width, sum, area, x, a, b, height
+read (*,*) n
+z = 0
 x = 0.0
-a = 0
-b = 3
+a = 4.d0 * datan(1.d0)
+b = a*1.5
 sum = 0.0
-width = real(b) / 10.0
-do while(n < 10)
+width = real(b) / n
+do while(z < n)
 x = x + width
-height = 2 ** x - 1
+height = sin(x)
 area = height * width
 sum = sum + area
-n=n+1
+z=z+1
 end do 
 print *, sum
 end program UpperSum
