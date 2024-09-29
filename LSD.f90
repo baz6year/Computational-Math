@@ -8,9 +8,9 @@ b = 3
 sum = 0.0
 width = real(b) / 10.0
 do while(n < 10)
-x = x + width
 height = 2 ** x - 1
 area = height * width
+x = x + width
 sum = sum + area
 n=n+1
 end do 
